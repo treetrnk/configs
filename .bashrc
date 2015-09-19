@@ -54,11 +54,6 @@ alias paci='packer -S'
 alias pacr='sudo pacman -Rsn'
 alias chkup='pacman -Sy | echo && pacman -Qu | wc -l | figlet'
 
-alias archpi='ssh nathan@192.168.1.40'
-alias archtv='ssh nathan@192.168.1.41'
-alias pachrpi='ping 192.168.1.40'
-alias parchtv='ping 192.168.1.41'
-
 alias apti='sudo apt-get install'
 alias apts='apt-cache search'
 alias aptre='sudo apt-get --reinstall install'
@@ -67,8 +62,8 @@ alias zombies='echo $(( 1+RANDOM%54 )) | figlet'
 alias items='echo $(( 1+RANDOM%88 )) | figlet'
 alias dice='echo $(( 1+RANDOM%6 )) | figlet'
 
-# Reset
-# Color_Off='\e[0m'       # Text Reset
+ # Reset
+ Color_Off='\e[0m'       # Text Reset
 
  # Regular Colors
  Black='\e[0;30m'        # Black
