@@ -1,0 +1,14 @@
+#!/bin/bash
+
+PERCENT=`acpi | cut -d" " -f4`
+
+STATUS=`acpi | cut -d" " -f3 | sed "s/,//"`
+
+if [ "$STATUS" == "Discharging" ] 
+then
+  STATUS=" "
+else
+  STATUS="  "
+fi
+
+echo $STATUS $PERCENT

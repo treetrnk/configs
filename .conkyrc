@@ -1,0 +1,40 @@
+# conky configuration
+#
+# The list of variables has been removed from this file in favour
+# of keeping the documentation more maintainable.
+# Check http://conky.sf.net for an up-to-date-list.
+#
+# For ideas about how to modify conky, please see:
+# http://crunchbanglinux.org/forums/topic/59/my-conky-config/
+#
+# For help with conky, please see:
+# http://crunchbanglinux.org/forums/topic/2047/conky-help/
+#
+# Enjoy! :)
+##############################################
+# Settings
+##############################################
+out_to_console yes
+## use_xft no
+## font -*-terminus-medium-r-normal-*-12-*-*-*-*-*-*-*
+#out_to_x no
+background no
+update_interval 2
+total_run_times 0
+use_spacer none
+color0 lightyellow
+color1 lightgrey
+##############################################
+#  Output
+##############################################
+TEXT
+## $mpd_smart 
+  ${exec ~/.scripts/getWifi}       ⯅⯆ ${upspeed wlp3s0}/ ${downspeed wlp3s0}       ᗧ ${exec pacman -Qu | wc -l}        ${cpu cpu0}%        $memperc%        $uptime_short       🔊 ${exec ~/.amixer}%       🕗  ${time %a. %b %e, %l:%M%P}       ${exec ~/.scripts/battery_stat}  
+## | ¨ $fs_used_perc% | í ${exec ~/.amixer}% | º ${execpi 21600 perl ~/.scripts/pacman.pl} 
+#Ê ${execpi 30 python ~/.scripts/gmail.py}-${execpi 30 python ~/.scripts/gmail2.py}          
+#
+#
+#OLD CONFIG
+## $mpd_smart 
+#¤ ${exec ~/.scripts/getWifi} | Ñ ${cpu cpu0}% | Î $memperc% | · $uptime_short | Ê ${execpi 30 python ~/.scripts/gmail.py}-${execpi 30 python ~/.scripts/gmail2.py} | í ${exec ~/.amixer}% | ${time %a. %b %e, %l:%M%P} | ¾ ${battery_short BAT1}
+## | ¨ $fs_used_perc% | í ${exec ~/.amixer}% | º ${execpi 21600 perl ~/.scripts/pacman.pl} 
