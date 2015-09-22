@@ -7,6 +7,21 @@ fi
 ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh; ssh'
 
 
+case $HOSTNAME in
+  archpad)
+    alias archey="archey3"
+    ;;
+  bananarch)
+    alias archey="archey3 -c yellow"
+    ;;
+  archbox)
+    alias archey="archey3 -c red"
+    ;;
+  *)
+    alias archey="archey3 -c magenta"
+    ;;
+esac
+
 
 clear && archey3 
 
