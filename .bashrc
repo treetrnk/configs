@@ -23,7 +23,7 @@ case $HOSTNAME in
 esac
 
 
-clear && archey3 
+clear && archey 
 
 if [ -f /etc/bash_completion ]; then
 	    . /etc/bash_completion
@@ -55,7 +55,7 @@ alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
-alias clean='clear && archey3' 
+alias clean='clear && archey' 
 alias c='clear'
 alias h?="history | grep"
 alias tv8='sudo systemctl start teamviewerd && teamviewer'
