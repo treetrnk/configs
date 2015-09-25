@@ -11,7 +11,7 @@ case $HOSTNAME in
   archpad)
     alias archey="archey3"
     ;;
-  bananarch)
+  archsrv)
     alias archey="archey3 -c yellow"
     ;;
   archbox)
