@@ -1,1 +1,0 @@
-/home/nathan/.irssi/scripts/nicklist.pl
