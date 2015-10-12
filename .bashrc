@@ -17,7 +17,7 @@ case $HOSTNAME in
   archbox)
     alias archey="archey3 -c red"
     ;;
-  lampsrv)
+  armportal)
     alias archey="screenfetch"
     ;;
   *)
