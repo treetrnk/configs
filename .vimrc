@@ -72,6 +72,10 @@ set background=dark " When set to "dark", Vim will try to use colors that look
                     " Any other value is illegal.
  
 set mouse=a         " Enable the use of the mouse.
+
+set colorcolumn=80  " Add a line length marker at column 80.
+
+highlight colorcolumn ctermbg=4
  
 filetype plugin indent on
 syntax on
